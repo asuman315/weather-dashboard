@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import React, { createContext, useState } from "react";
 import '../styles/globals.css'; // Importing global styles (including Tailwind CSS)
 import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';

@@ -1,5 +1,5 @@
 // components/SearchBar.tsx
-import { useContext, useState, useEffect, use } from 'react';
+import React, { useContext, useState, useEffect, use } from 'react';
 import { WeatherContext } from '../pages/_app';
 import { fetchWeatherData } from '@/utils/api';
 

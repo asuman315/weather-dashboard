@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface CustomIconProps {
     svg : React.ReactNode;
     iconSize?: string;

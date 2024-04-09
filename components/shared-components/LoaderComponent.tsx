@@ -1,3 +1,5 @@
+import React from 'react';
+
 const LoaderComponent = () => {
     //return <RingLoader size={25} color={'#ffffff'} />
     return (
