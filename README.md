@@ -18,6 +18,8 @@ The project is organized into the following directories:
 |     |-- index.tsx
 |     |-- _app.tsx
 |-- components/
+|     |-- shared-components
+|     |      |-- [mysharedComponent.tsx]     
 |     |-- ForecastCard.tsx
 |     |-- TemperatureToggle.tsx
 |     |-- Layout.tsx
