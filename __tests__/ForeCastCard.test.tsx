@@ -31,7 +31,7 @@ test('renders loading state correctly', () => {
     </WeatherContext.Provider>
   );
 
-  expect(screen.getByText(/loading.../i)).toBeInTheDocument();
+  expect(screen.getByText(/processing.../i)).toBeInTheDocument();
 });
 
 // Test to check if ForecastCard renders correctly when data has loaded

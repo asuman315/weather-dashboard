@@ -43,7 +43,7 @@ const TemperatureToggle: React.FC = () => {
 
 
   useEffect(() => { // convert temperature when the unit changes and depending on the current unit
-    if (!data.weatherData) return;
+    if (!data?.weatherData) return;
     data.unit === "metric"
       ? updateTemperature(fahrenheitToCelsius)
       : updateTemperature(celsiusToFahrenheit);
@@ -62,7 +62,7 @@ const TemperatureToggle: React.FC = () => {
       onClick={toggleTemperature}
       className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
     >
-      Switch to {data.unit === "metric" ? "Fahrenheit" : "Celsius"}
+      Switch to {data?.unit === "metric" ? "Fahrenheit" : "Celsius"}
     </button>
   );
 };

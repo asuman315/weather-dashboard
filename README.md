@@ -33,6 +33,8 @@ The project is organized into the following directories:
 |     |-- useWeather.ts
 |-- types/
 |     |-- weather.ts
+|-- __tests__
+|     |-- [mytest.test.tsx]
 |-- tailwind.config.js
 |-- postcss.config.js
 |-- tsconfig.json
