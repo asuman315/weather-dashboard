@@ -1,17 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-
-
-body {
-  
-}
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animate-scale-out {
+    @apply scale-0 opacity-0 duration-200 ease-out; /* Tailwind scale and opacity utilities */
   }
+  .animate-scale-in {
+    @apply scale-100 opacity-100  duration-300 ease-in; /* Tailwind scale and opacity utilities */
+  }
+  .focus-ring {
+    @apply focus:ring-1 focus:outline-none focus:ring-primary-500
+  } 
+  .table-cellpx {
+    @apply px-2 py-4;
+  }
+  .xs-icon {
+    @apply w-3 h-3;
+  }
+  .sm-icon {
+    @apply w-4 h-4;
+  }
+  .md-icon {
+    @apply w-6 h-6;
+  }
+  .lg-icon {
+    @apply w-8 h-8;
+  }
+  .modal-backdrop-styles {
+    @apply fixed flex items-center justify-center inset-0 z-30 bg-gray-600 bg-opacity-50 overflow-y-auto h-screen w-full
+  }
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #D9D9D9;
+  border-radius: 4px;
+}
+
+
+/* Hide spin buttons for number inputs */
+input[type='number'] {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield; /* Chrome, Safari, Edge */
+}
+
+/* Hide spin buttons for Chrome */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

@@ -1,6 +1,8 @@
 
 // components/Layout.tsx
 import React, {FC, ReactNode} from 'react';
+import HeaderComponent from './header';
+import NavBarComponent from './nav-bar';
 
 interface AppLayoutProps {
     children: ReactNode;
@@ -8,17 +10,15 @@ interface AppLayoutProps {
 
 const Layout: FC<AppLayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen font-urbanist bg-gray-100">
-      <header className="bg-primary-50 text-gray-800 font-semibold p-4 text-center">
-        Weather Dashboard
-      </header>
-      <main className="flex-grow container mx-auto px-4">
-        {children}
-      </main>
-      <footer className="bg-primary-50 text-gray-800 font-semibold p-4 text-center">
-        Made with ☀️ by Asuman Ssendegeya
-      </footer>
-    </div>
+    <main className="lg:flex font-urbanist">
+      <NavBarComponent />
+      <section className={`overflow-hidden w-full `}>
+        <HeaderComponent />
+        <section className={`max-w-[120rem] lg:ml-[16rem] xl:ml-[19.5rem]`}>
+          {children}
+        </section>
+      </section>
+    </main>
   );
 };
 

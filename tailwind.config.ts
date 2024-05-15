@@ -6,10 +6,25 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  safelist: [
+    // Safelist specific classes applied dynamically in the codebase so that they are not purged
+    "bg-error-100",
+    "text-blue-500",
+    "text-gray-300",
+    "text-info-500",
+    "bg-info-50",
+    "bg-error-50",
+    "bg-yellow-50",
+    "text-yellow-500",
+    "text-primary-600",
+    "text-warning-400",
+    "min-w-[100rem]",
+    "min-w-[650px] md:min-w-[750px]",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        'urbanist': ['Urbanist', 'sans-serif'],
+        urbanist: ["Urbanist", "sans-serif"],
       },
       screens: {
         sm: "480px",
@@ -35,34 +50,34 @@ const config: Config = {
           900: "#2F005C",
         },
         gray: {
-          50: '#F9FAFB',
-          100: '#F2F4F7',
-          200: '#EAECF0',
-          300: '#D0D5DD',
-          400: '#98A2B3',
-          500: '#667085',
-          600: '#475467',
-          700: '#344054',
-          800: '#1D2939',
+          50: "#F9FAFB",
+          100: "#F2F4F7",
+          200: "#EAECF0",
+          300: "#D0D5DD",
+          400: "#98A2B3",
+          500: "#667085",
+          600: "#475467",
+          700: "#344054",
+          800: "#1D2939",
         },
         error: {
-          50: '#FFFBFA',
-          100: '#FEE4E2',
-          500: '#F04438',
-          700: '#B42318',
+          50: "#FFFBFA",
+          100: "#FEE4E2",
+          500: "#F04438",
+          700: "#B42318",
         },
         success: {
-          50: '#F4F9F6',
-          100: '#D1FADF',
-          500: '#12B76A',
-          700: '#027A48',
+          50: "#F4F9F6",
+          100: "#D1FADF",
+          500: "#12B76A",
+          700: "#027A48",
         },
         warning: {
-          50: '#FFFCF5',
-          100: '#FEF0C7',
-          400: '#FDB022',
-          500: '#F79009',
-          700: '#B54708',
+          50: "#FFFCF5",
+          100: "#FEF0C7",
+          400: "#FDB022",
+          500: "#F79009",
+          700: "#B54708",
         },
       },
       width: {
@@ -140,7 +155,7 @@ const config: Config = {
         "38px": "2.375rem", // 38px
         "39px": "2.4375rem", // 39px
         "41px": "2.5625rem", // 41px
-      }
+      },
     },
   },
   plugins: [],
