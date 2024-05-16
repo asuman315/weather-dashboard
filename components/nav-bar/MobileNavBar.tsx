@@ -4,7 +4,6 @@ import { iconSVGs } from "@/assets/iconSVGs";
 import NavItem from "./NavItem";
 import { navList } from "./navList";
 import { MyAppContext } from "../../pages/_app";
-import { Logo } from "@/components/shared-components";
 
 export const MobileNavBar = () => {
   const { buildingIcon, crossIcon } = iconSVGs;

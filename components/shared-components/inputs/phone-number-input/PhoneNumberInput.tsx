@@ -1,6 +1,5 @@
-import React, { useContext, useState, useEffect, FC } from "react";
+import React, { useState, useEffect, FC } from "react";
 import { iconSVGs } from "@/assets/iconSVGs";
-import Image from "next/image";
 import { PhoneNumberInputProps, CountryCodeProps, CountryProps } from "./phoneNumberInput.types";
 
 // this component is used in the signup and login pages to get the user's phone number and country code
