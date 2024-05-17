@@ -76,7 +76,6 @@ const RegisterComponent = () => {
     <article className="lg:pt-[7rem] py-3 bg-gray-50">
       <section className="flex gap-6 w-[92%] mx-auto my-auto max-w-7xl">
         <div className="w-1/2 hidden md:block">
-          /* eslint-disable-next-line */
           <img
             src="https://softpower.ug/wp-content/uploads/2023/05/6220323B-3DE6-4DAC-B842-1A61C85307FC.jpeg"
             alt="kampala events hub logo"
